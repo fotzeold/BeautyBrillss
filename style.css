@@ -392,22 +392,24 @@ body.body-fixed {
 
 .masters__list {
 	display: flex;
-	justify-content: space-between;
-	gap: 40px;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 60px;
 }
 
 .masters h3 {
 	font-size: 20px;
 	font-style: italic;
+	height: 53px;
 }
 .masters p {
 	font-size: 16px;
 }
 
 .masters__list-item {
+	max-width: 360px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	gap: 10px;
 }
 
@@ -482,6 +484,11 @@ body.body-fixed {
 	font-weight: 700;
 }
 
+.special-service {
+	height: 80px !important;
+	padding: 0 5px;
+}
+
 @media all and (max-width: 1024px) {
 	.hero__wrapper {
 		flex-direction: column;
@@ -518,11 +525,12 @@ body.body-fixed {
 @media all and (max-width: 980px) {
 	.header__burger {
 		display: flex;
+		z-index: 100;
 	}
 
 	.header__logo {
 		position: relative;
-		z-index: 10;
+		z-index: 82;
 	}
 
 	.header__wrapper nav {
@@ -536,6 +544,7 @@ body.body-fixed {
 		flex-direction: column;
 		justify-content: center;
 		gap: 45px;
+		z-index: 80;
 		box-shadow: 1px 1px 6px rgba(26, 26, 26, 0.59);
 	}
 
@@ -644,6 +653,10 @@ body.body-fixed {
 		font-size: 14px;
 	}
 
+	.masters h3 {
+		height: auto;
+	}
+
 	html {
 		scroll-behavior: smooth;
 		scroll-padding-top: 50px;
@@ -681,7 +694,11 @@ body.body-fixed {
 		font-size: 28px !important;
 	}
 	.slider .swiper-slide {
-		height: 380px !important;
-		border: 1px solid red;
+		height: 400px !important;
+	}
+	.special-service {
+		height: 80px !important;
+		padding: 0 5px;
+		font-size: 12px;
 	}
 }
