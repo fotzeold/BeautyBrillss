@@ -22,6 +22,7 @@ headerNav.addEventListener("click", (event) => {
 	if (event.target.closest("a") && event.target.href) {
 		headerNav.classList.remove("active")
 		headerBurger.classList.remove("active")
+		body.classList.remove("body-fixed")
 	}
 })
 
