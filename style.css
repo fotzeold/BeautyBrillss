@@ -474,6 +474,7 @@ body.body-fixed {
 	width: 300px;
 	border-right: 1px solid white;
 	line-height: 60px;
+	border-left: 1px solid white;
 	text-align: center;
 }
 
